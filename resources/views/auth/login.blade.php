@@ -17,11 +17,11 @@
             {{ $errors->first() }}
         </div>
         @endif
-        <form action="{{ route('login') }}" method="POST">
+        <form action="/login" method="POST">
             @csrf
             <div class="form-group position-relative has-icon-left mb-4">
-                <input class="form-control form-control-xl" type="email" name="email" placeholder="Email"
-                    value="{{ old('email') }}">
+                <input class="form-control form-control-xl" type="text" name="no_wa" placeholder="No WA"
+                    value="{{ old('no_wa') }}">
                 <div class="form-control-icon">
                     <i class="bi bi-person"></i>
                 </div>
